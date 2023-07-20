@@ -1,219 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Rubik:wght@400;500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  background-color: #161616;
+  font-family: "rubik";
   box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-  display: flexbox;
-}
-
-/* DASHBOARD */
-
-.heading {
-  max-width: 50%;
-  max-height: 50%;
-  width: 30%;
-  text-align: center;
-  margin-top: 10%;
-  margin-left: 33%;
-  line-height: 3.2rem;
-}
-
-p {
-  font-stretch: wider;
-  font-size: 55px;
   color: #ffff;
-  font-family: "Gloock", serif;
+  max-height: 100vh;
 }
 
-.buttons {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.movie {
-  font-family: "Poppins", sans-serif;
-  font-size: x-large;
-  line-height: 3.5rem;
-  width: 13rem;
-  margin: 15px;
-  border-radius: 10px;
-  padding: 25px;
-  background-color: hsla(0, 0%, 100%, 0);
-  border-color: #ffff;
-  border-color: #ffff;
-  color: #ffff;
-}
-
-.movie:hover {
-  background-color: rgba(1, 1, 1, 0.603);
-  color: red;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 10rem;
+  transition:all 0.5s ease-in;
+  background: transparent;
 }
 
 body {
-  font-family: "Gloock", serif;
-  background-image: url(/static/images/bg.jfif);
+  background-image: url(/static/images/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .logo {
-  width: 15%;
-  padding: 15px 0px 10px 0px;
-  padding-left: 30px;
+  height: 5rem;
 }
 
-.navbar {
+a {
+  text-decoration: none;
+}
+
+.navbar a{
+  padding: 0 2.5rem;
   color: #ffff;
-  border-radius: 20px;
-  margin: 15px 10px;
-  align-items: center;
-  font-family: 'Kanit', sans-serif;
-  letter-spacing: 3px;
-}
-
-.navbar ul {
-  float: right;
-  margin-right: 20px;
-}
-
-.navbar ul li {
-  margin: 0 5px;
-  display: inline-block;
-  line-height: 110px;
-  padding: 0px 25px;
-}
-
-.navbar ul li a {
-  color: #ffff;
-  font-size: 20px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-nav ul li a {
-  border-radius: 10px;
-  padding: 25px;
+  font-size: 2rem;
 }
 
 a:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transition: 0.5s;
+  color: #db3f66;
 }
 
-.btn {
-  padding: 15px;
-  border-radius: 20px;
-  border-width: 0px;
-  background-color: hsl(0, 100%, 48%);
-  font-size: 20px;
-  font-weight: 600;
+.h , .b {
+  color: #db3f66;
+}
+
+.heading {
+  transition:all 0.5s ease-in;
+  text-align: center;
+  margin: 15em 20em;
+  padding: 5em;
+}
+
+.h-text {
+  margin-bottom: 5em;
+}
+
+span {
+  font-size: 2rem;
+}
+
+.movie_search {
+  padding: 1.5em 5em;
+  border: 2px solid;
+  border-color: #db3f66;
+  border-radius: 10rem;
+  margin: 5em 10em;
+  transition:all 0.5s ease-in;
+}
+
+.movie_search:hover{
+  background-color: #db3f66; 
   color: #ffff;
 }
 
 .search {
-  align-items: center;
-  width: 60%;
-  padding: 20px;
-  margin-left: 20%;
-  margin-top: 10%;
+ padding: 5rem;
+ margin: 5em 15em;
+ display: flex;
+  justify-content: center;
 }
 
 .search-bar {
   padding: 20px;
 }
 
+
 .bar-1 {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin: 2em 10em;
+  padding: 0.75em 10em;
+  text-align: center;
+}
+
+.bar-2 {
+  margin: 0em 10em;
+  padding: 0.75em 10em;
+  text-align: center;
 }
 
 .search-bar input {
-  background: rgba(255, 255, 255, 0.2);
-  border: 0;
+  border: 2px solid;
   outline: none;
-  padding: 25px 20px;
-  font-size: 20px;
-  width: 100%;
-  border-radius: 60px;
+  font-size: 1.5em;
+  border-radius: 10px;
   backdrop-filter: blue(4px) saturate(180%);
+  font-family: "rubik";
 }
 
-::placeholder {
-  color: #ffffff;
+.form-search {
+  font-size: 1.5rem;
+  padding: 1em;
 }
 
-.btn-rec {
-  max-width: 100%;
-  width: 100px;
-  background: transparent;
-  padding: 20px;
-  border: none;
-  margin-left: 43%;
-  margin-top: 20px;
+.btn-rec{
+  margin: 2em 42em;
+  border-radius: 20px;
+}
+
+.btn-rec-img {
+  border-radius: 20px;
+  padding: 1.5em;
+}
+
+.btn-rec-img:hover{
+  transition: all 0.0s;
+  background-color: #db3f66;
 }
 
 .btn-rec:hover {
-  background: rgba(238, 234, 234, 0.252);
-  border-radius: 60px; 
+  transition: all 0.0s;
+  border: none;
 }
-
 
 .ABOUT {
-  margin: 10%;
-  font-size: smaller;
+  margin: 0em 15rem;
+  font-size: 2em;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 10rem;
+  padding: 1.5em;
+  margin: 0.5em 15em;
+  word-spacing: 2px;
+  line-height: 2em;
+  
+}
+
+.ABOUT span {
+  color: #db3f66;
+}
+
+/* 
+
+.card-poster img {
+  width: 100%;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+} */
+
+.card-heading {
   text-align: center;
 }
 
-
-/* RESULT PAGE */
-
-.container {
-  font-family: 'Kanit', sans-serif;
-  text-align: center;
-  font-size: 30px;
-  text-decoration: none;
-  color: #ffff;
-  width: fit-content;
-  border-radius: 20px;
-  margin-left: 30%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  padding: 25px;
-  font-stretch: wider;
-  line-height: 1.3rem;
+.searched-movie-name{
+  color: #db3f66;
 }
 
 .cards-container {
-  display: flex;
-  margin: 20px;
-  font-family: 'Kanit', sans-serif;
-  justify-content: space-between;
-  color: aliceblue;
+  margin: 1em;
   max-width: 100%;
-  max-height: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card {
-  margin: 20px;
-  font-size: 30px;
+  border: 1px solid white;
+  border-radius: 2em;
+  max-height: 70vh;
+  max-width: 35vh;
+  background-color: #3b3b3b;
+  margin: 0.5rem;
+
+}
+
+.movie-title {
   text-align: center;
+  padding: 1em;
+  width: 100%;
+  height: 7em;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
 }
 
-.name {
-  padding: 10px;
+.movie-title h1 {
+
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
 }
 
-.name::first-letter {
-  text-transform: capitalize;
+br {
+  height: 0em;
+  size: 1px solid white;
 }
 
-.card-poster img {
-  height: 500px;
-  width: 300px;
-  transition: transform 0.5s;
-  border-radius: 20px;
+.card-poster {
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
 }
 
-.card-poster :hover {
-  transform: scale(1.3);
-  z-index: 2;
+.card-poster img{
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
 }
+
+
+
+
+
+
+
+
+
+
